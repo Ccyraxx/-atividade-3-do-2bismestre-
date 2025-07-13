@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real nota, nota1, media
+		
+		escreva("Informe a primeira nota (0 à 100): ")
+		leia(nota)
+
+		escreva("Informe a segunda nota(0 à 100): ")
+		leia(nota1)
+
+		media = (nota + nota1)/2
+
+		se(media==100){
+			escreva("Aprovado com Distinção.")
+	
+		} senao se(media>=70) {
+			escreva("Aprovado.")
+			
+		} senao {
+			escreva("Reprovado.")
+		}
+
+	}
+}
