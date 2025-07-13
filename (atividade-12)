@@ -1,0 +1,81 @@
+programa
+{
+	real total = 0
+	
+	funcao inicio()
+	{
+		inteiro opcao = -1
+
+		escreva("*****************************************************", "\n")
+		escreva("*   Lanchonete do jerff - IFPR-Campus-Foz-do-Iguaçu   *", "\n")
+		escreva("*****************************************************", "\n")
+		escreva("*  Código             Opções           Valor        *", "\n")
+		escreva("*   100          Cachorro Quente      R$ 5.00       *", "\n")
+		escreva("*   101               Bauru           R$ 2.60       *", "\n")
+		escreva("*   102            Bauru com ovo       R$ 3.80       *", "\n")
+		escreva("*   103              Hamburger        R$ 9.00       *", "\n")
+		escreva("*   104            Cheeseburger       R$ 11.00      *", "\n")
+		escreva("*   105            Refrigerante       R$ 3.00       *", "\n")
+		escreva("*   106         Semente dos Deuses    R$ 1000.00    *", "\n")
+		escreva("*    0                 Sair                         *", "\n")
+		escreva("*****************************************************", "\n")
+
+		enquanto(opcao != 0){
+			
+			escreva("informe uma opção!")
+			leia(opcao)
+
+			escolha(opcao){
+
+				caso 100: 
+					escreva("Você selecionou Cachorro Quente! \n")
+					calcular_subtotal(5.00)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 101: 
+					escreva("você selecionou Bauru! \n")
+					calcular_subtotal(2.80)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 102: 
+					escreva("você selecionou Bauru com ovo! \n")
+					calcular_subtotal(3.80)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 103: 
+					escreva("você selecionou Hamburger! \n")
+					calcular_subtotal(9.00)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 104: 
+					escreva("Você selecionou Cheeseburger! \n")
+					calcular_subtotal(11.00)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 105: 
+					escreva("você selecionou refrigerante! \n")
+					calcular_subtotal(3.00)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 106: 
+					escreva("você selecionou Semente dos Deuses! ", "\n")
+					calcular_subtotal(1000.00)
+					escreva("o total é: R$ ", total, ".\n")
+					pare
+				caso 0: 
+					escreva("você selecionou sair! Obrigada por visitar minha Lanchonete,venha sempre. \n")
+					pare
+				caso contrario:
+			 		escreva("você selecionou uma opção invalida! \n")
+			 		pare
+		}		
+	}	
+}
+	funcao calcular_subtotal(real valor_produto){
+		
+		inteiro unidades		
+		escreva("quantas unidades?")
+		leia(unidades)
+		total += unidades * valor_produto	
+	}
+}
