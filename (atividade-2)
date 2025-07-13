@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro A, B, C, x1, x2, delta
+
+		escreva("informe um numero!\n")
+		leia(A)
+		escreva("informe outro numero!\n")
+		leia(B)
+		escreva("informe mais um numero!\n")
+		leia(C)
+		
+		delta=(B*B - 4*A*C)
+
+		x1=(-B + delta)/A*A
+		x2=(-B - delta)/A*A
+
+		escreva("A)o valor de A=",A, ",B=",B, ",C=",C,"!\n")
+		escreva("B)o valor de delta é: ",delta,"\n")
+		escreva("C)o valor do X1 é: ",x1,"\n")
+		escreva("D)o valor do X2 é: ",x2,"")
+	}
+}
