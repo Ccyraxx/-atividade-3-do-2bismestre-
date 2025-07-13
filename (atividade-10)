@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro velocidade_do_carro,km_acima
+		
+		escreva("qual foi a volocidade que voce correu!\n")
+		leia(velocidade_do_carro)
+
+		km_acima=7.00*velocidade_do_carro
+
+		se(velocidade_do_carro>80){
+			escreva("infelizmente voce foi multado!")
+			escreva("sua multa sera de: ",km_acima)
+		}se(velocidade_do_carro<80 ou velocidade_do_carro==80){
+			escreva("voce esta no limite pode passar!")
+		}
+	}
+}
