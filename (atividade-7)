@@ -1,0 +1,37 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num,num1,num2
+		inteiro maior, meio,menor, pokemon
+		
+		escreva("Me informe o primeiro número:")
+		leia(num)
+		escreva("Me informe o segundo número:")
+		leia(num1)
+		escreva("Me informe o terceiro número:")
+		leia(num2)
+		
+		se(num>num1 e num>num2){
+			maior = num
+			meio = num1
+			menor = num2
+			
+		} senao se (num2>num1){
+			maior = num2
+			meio = num1
+			menor = num
+		} senao {
+			maior = num1
+			meio = num
+			menor = num2
+		}
+		se(meio <= menor){
+			pokemon = meio
+			meio = menor
+			menor = pokemon
+		}
+		escreva("A ordem é: ", maior,"/", meio,"/", menor)
+	}
+}
