@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num, num1, num2, num3
+
+		escreva("informe um numero\n")
+		leia(num)
+		escreva("informe outro numero\n")
+		leia(num1)
+		escreva("informe outro numero\n")
+		leia(num2)
+		escreva("informe outro numero\n")
+		leia(num3)
+
+		se(num>num1 e num>num2 e num>num2){
+			escreva("o numero maior é: ", num)
+		}senao se(num1>num e num1>num2 e num1>num3){
+			escreva("o numero maior é: ", num1)
+		}senao se(num2>num e num2>num1 e num2>num3){
+			escreva("o numero maior é: ", num2)
+		}senao se(num3>num e num3>num2 e num3>num1){
+			escreva("o numero maior é: ", num3)
+		}
+	}
+}
