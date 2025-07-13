@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro dia, dia_preco
+		real km, km_preco, preco_total
+		
+		escreva("informe quantos km voce percorreu com o carro!")
+		leia(km)
+		escreva("informe quantos dias voce ficou com o nosso carro!")
+		leia(dia)
+
+		dia_preco=dia*60
+		km_preco=km*0.15
+		preco_total=dia_preco+km_preco
+
+		escreva("voce percorreu ", km," km, totalizando R$", km_preco, "\n")
+		escreva("voce utilizou o carro por  ", dia," dias, totalizando R$", dia_preco, "\n")
+		escreva("ao total você deverá pagar R$", preco_total,"\n")
+	}
+}
