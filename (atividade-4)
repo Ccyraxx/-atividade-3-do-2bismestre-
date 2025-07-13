@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro tempo//temperatura
+		
+		escreva("qual a temperatura de hoje?")
+		leia(tempo)
+
+		se(tempo>=0){
+			escreva("A temperatura é postiva!")
+		}se(tempo<0){
+			escreva("A temperatura é negativa!")
+		}
+	}
+}
