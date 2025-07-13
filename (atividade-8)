@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia triangulo =""
+		inteiro lado, lado1, lado2
+		
+		escreva("Me informe o primeiro lado: ")
+		leia(lado)
+		escreva("Me informe o segundo lado: ")
+		leia(lado1)
+		escreva("Me informe o terceiro lado: ")
+		leia(lado2)
+
+		se(lado1+lado2>lado2 e lado1+lado2>lado2 e lado2+lado2>lado1){
+			se(lado == lado1 e lado1 == lado2){
+				triangulo = "equilatero"
+			} senao se(lado != lado1 e lado != lado1 e lado != lado1){
+				triangulo = "escaleno"
+			} senao se (lado == lado1 ou lado == lado1 ou lado == lado1){
+				triangulo = "isoceles"}
+
+				escreva("e um triangulo ", triangulo, ".")
+			}		
+	}
+}
